@@ -21,18 +21,17 @@ body {
 /* Place text on top of the image */
 .hero-text {
   position: absolute;
-  top: 50%;
-  /* vertically center */
+  top: 25%;
   left: 5%;
-  /* keep text on the left */
   transform: translateY(-50%);
   color: #fff;
-  z-index: 2;
-  max-width: 700px;
-  background: rgba(0, 0, 0, 0.35);
-  /* light backdrop for readability */
+  z-index: 1;
+
+  display: inline-block;
+  max-width: min(90vw, 1000px);
   padding: 1rem;
-  border-radius: 0.25rem;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 4px;
 }
 
 /* Basic spacing/size for headings */
@@ -43,9 +42,30 @@ body {
 .hero-text h2 {
   margin: 0 0 .5rem;
   font-weight: 400;
+  text-align: center;
+  text-decoration: wavy;
 }
 
 .hero-text .author {
   margin: 0;
   opacity: 0.95;
+  text-align: right;
+}
+
+/* Responsiveness for H1 title */
+@media (min-width: 992px) {
+  .hero-text h1 {
+    white-space: nowrap;
+  }
+}
+
+/* Responsivenes for smaller screens, it wraps down to fit nicely */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.125rem;
+  }
 }
