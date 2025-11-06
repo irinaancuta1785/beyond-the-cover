@@ -189,4 +189,45 @@ body {
     flex: 1;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
+
+  /* Book event info */
+  .book-info {
+    border-top: 2px solid #d4c4a8;
+    padding-top: 1rem;
+    margin-top: auto;
+    text-align: center;
+  }
+
+  .event-date {
+    color: #5a4a3a;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  /* Booking button */
+  .btn-book {
+    display: inline-block;
+    background: linear-gradient(135deg, #8b6f47 0%, #6b5537 100%);
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .btn-book:hover {
+    background: linear-gradient(135deg, #6b5537 0%, #5a4a3a 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    color: #fff;
+  }
+
+
 }
