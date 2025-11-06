@@ -53,6 +53,23 @@ body {
   text-align: right;
 }
 
+/* Divider on hero image */
+.hero-divider-wide {
+  position: absolute;
+  left: 3%;
+  right: 3%;
+  height: 3px;
+  border: 0;
+  background: linear-gradient(to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(139, 69, 19, 0.6) 20%,
+      rgba(160, 82, 45, 0.8) 50%,
+      rgba(139, 69, 19, 0.6) 80%,
+      rgba(0, 0, 0, 0) 100%);
+  top: 44%;
+  z-index: 1;
+}
+
 /* Responsiveness for large screens */
 @media (min-width: 992px) {
   .hero-text h1 {
