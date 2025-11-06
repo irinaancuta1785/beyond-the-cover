@@ -229,5 +229,34 @@ body {
     color: #fff;
   }
 
+  /* Monthly pass banner */
+  .special-offer {
+    background: linear-gradient(135deg, #c9a961 0%, #b8935a 50%, #a67c52 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    border: 3px solid #8b6f47;
+  }
 
+  .offer-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .offer-title {
+    color: #2c2416;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  .offer-description {
+    color: #3d2817;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
 }
