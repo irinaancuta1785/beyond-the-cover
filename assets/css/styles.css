@@ -1,13 +1,16 @@
+/* Global font settings */
 html,
 body {
   height: 100%;
   margin: 0;
 }
 
-/* Keep the hero container as the positioning context */
+/* Navbar spacing */
 .hero-image {
   position: relative;
   margin-top: 56px;
+  max-height: 70vh;
+  overflow: hidden;
 }
 
 
@@ -15,10 +18,11 @@ body {
 .hero-image img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
-/* Place text on top of the image */
+/* Hero text overlay */
 .hero-text {
   position: absolute;
   top: 25%;
@@ -34,7 +38,6 @@ body {
   border-radius: 8px;
 }
 
-/* Basic spacing/size for headings */
 .hero-text h1 {
   margin: 0 0 .25rem;
 
