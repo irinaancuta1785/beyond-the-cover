@@ -4,76 +4,63 @@ A community-driven platform that brings readers together to discover and discuss
 # 📚 Beyond the cover
 
 ## 🧩 Project Overview
-**BeyondTheCover** is a static, user-centric website designed for readers who enjoy discussing books in a friendly and engaging online environment.  
-The site allows users to **discover reading packages**, **book discussion slots**, and **connect with other book enthusiasts**.
+**Beyond The Cover** is a website I built for my first year project. It's basically a book club website where people can see upcoming book discussions and book their spot to join.
 
-The goal of this project is to present clear and structured information that helps users **explore reading options**, **join virtual book discussions**, and **purchase packages** that suit their interests.
+I wanted to create something that looks professional but is still simple enough for me to build with just HTML, CSS, and Bootstrap (no JavaScript yet since we haven't really covered that properly).
 
----
-
-## 🎯 Purpose and Value
-
-### **For Users**
-- Discover upcoming books to read and discuss.
-- Book available discussion slots directly from the website.
-- Choose from reading packages that match their time and interest level.
-- Stay connected with other readers through upcoming discussion sessions.
-
-### **For the Site Owner**
-- Promote and sell reading packages.
-- Attract and retain members for the reading club.
-- Build an engaged community of readers through online discussions.
-- Increase visibility via integrated social media links.
+The idea is that users can browse through different books we're discussing in December 2025, see the dates and times, and click a button to book their spot. There's also a monthly pass option if someone wants to join all the discussions.
 
 ---
 
-## 🏗️ UX (User Experience) Design
+## 🎯 What's It For?
 
-### **Strategy**
-The primary audience includes:
-- **Avid readers** seeking community interaction.
-- **Casual readers** wanting motivation through structured reading sessions.
-- **New members** discovering book clubs for the first time.
+### **For Users (People Visiting the Site)**
+- They can see what books are coming up for discussion
+- Book a spot for a specific book discussion
+- See dates and times for each session
+- Get a monthly pass to join everything in December
+- Find contact info if they have questions
 
-### **User Goals**
-| User Type | Goal |
-|------------|------|
-| Returning Member | Book a slot for an upcoming discussion. |
-| New Visitor | Learn about the club and explore packages. |
-| Potential Customer | Purchase a reading package or contact the club. |
-
-### **Site Owner Goals**
-| Goal | Description |
-|------|--------------|
-| Membership Growth | Encourage users to purchase a reading package. |
-| Community Engagement | Allow users to reserve slots and interact. |
-| Provide social media visibility and contact information. |
+### **For the Book Club Owner**
+- Show off the upcoming book discussions
+- Get people to book spots for sessions
+- Build up a community of book lovers
+- Make it easy for people to contact them
 
 ---
 
-## 🧱 Information Architecture
+## 🏗️ Planning and Design Process
 
-### **Site Structure**
-The site consists of multiple pages and sections:
-1. **Home** – Eye-catching hero section with a reading-themed quote, followed by featured packages and booking slots.
-2. **About** – Description of the book club, mission, and imagery of members reading together.
-3. **Booking** – Overview of available packages and overview of available discussion slots.
-4. **Sugestions** - Sugestions for feature books to be read and disscused.
-5. **Contact** – Club contact details and links to social media platforms.
+### **Who Is This Site For?**
+When I was planning this, I thought about who would actually use it:
+- People who love reading and want to discuss books with others
+- Someone who's curious about joining a book club for the first time
+- Regular members who want to book their next session
+- Anyone looking for the club's contact details
 
-### **Navigation**
-A consistent navigation bar appears across all pages, containing:
-- Home  
-- About   
-- Booking
-- Sugestions  
-- Contact  
+### **What Do They Want to Do?**
+I tried to think about what people would want when they visit:
+- See what books are being discussed
+- Find out when the discussions are happening
+- Book a spot without it being complicated
+- Maybe get a monthly pass if they're really keen
+- Contact the club if they have questions
 
-### **Footer**
-Includes:
-- Social media icons (Facebook, Instagram, X/Twitter)  
-- Contact email and phone number  
-- Copyright notice  
+---
+
+## 🧱 Site Structure
+
+Right now it's just one page (might add more pages later). The page includes:
+
+1. **Navigation Bar** – At the top with links to different sections. It sticks to the top when you scroll which I learned how to do from Bootstrap docs.
+
+2. **Hero Section** – Big image with a quote from George R.R. Martin (Game of Thrones author!) about reading. Below that there's a "Discussion Guide" section that explains how the book discussions work.
+
+3. **Book Discussion Cards** – This is the main part where I show 6 different books. Each card has the book cover, title, author, a short description, and when the discussion is happening. There's a "Book Your Spot" button on each one.
+
+4. **Monthly Pass Banner** – A special section at the bottom offering a monthly pass for people who want to join all discussions.
+
+5. **Footer** – Contact information, quick links, and copyright info. I used Bootstrap for this too.  
 
 ---
 
