@@ -66,23 +66,62 @@ Right now it's just one page (might add more pages later). The page includes:
 
 ## 🎨 Design Choices
 
+### **Color Palette**
+I wanted warm, cozy colors that make you think of reading in a comfortable library or coffee shop. I used an online color picker and tried different combinations until I found ones that looked good together.
 
+| Color Name | Hex Code | Where I Used It |
+|-------|----------|----------|
+| Cream | #f5e6d3 | Book card backgrounds |
+| Light Brown | #e8d5b7 | Bottom of the card gradients |
+| Medium Brown | #8b6f47 | Author names, buttons |
+| Dark Brown | #6b5537 | When you hover over buttons |
+| Very Dark Brown | #3d2817 | Main text, monthly pass button |
+| Dark Background | #2c2416 | Background behind all the cards |
+| Tan/Beige | #d4c4a8 | Subtitle text |
+| Golden Brown | #c9a961 | Monthly pass banner |
+| Saddle Brown | #b8935a | Banner gradient middle |
+| Sienna | #a67c52 | Banner gradient darker part |
+
+The cream cards really pop against the dark brown background, which I was going for. I tested different browns until I found ones that weren't too harsh.
+
+### **Typography**
+I read on Stack Overflow that you should use different fonts for headings and body text, so that's what I did:
+
+**For Headings:**
+- Font: Georgia (with Times New Roman as backup if Georgia doesn't load)
+- I used this for book titles, author names, and section headings
+- Serif fonts (the ones with little feet on the letters) look more classic and "bookish"
+
+**For Everything Else:**
+- Font: System fonts (basically uses whatever font your device normally uses)
+- I used this for descriptions, buttons, navigation, footer
+- This was recommended in the Bootstrap documentation because it loads faster and looks clean
+
+I made the book titles bold and put author names in italics to make them stand out. Took me a while to figure out the font-family CSS but I found some good examples on W3Schools.
 
 ### **Imagery**
+I found all my images on free stock photo websites like Pexels and Unsplash:
+- The main background image shows books with a cozy vibe
+- Each book discussion has an actual book cover image so people can see what the book looks like
+- I made sure all images have alt text for accessibility (learned this is important in our web development module)
+
+The hero image took me ages to get right because it was either too tall or too short on different screens. Eventually I figured out how to set a max-height in CSS which helped a lot.
 
 
 ---
 
-## 🧰 Technologies Used
+## 🧰 What I Used to Build This
 
-| Technology | Purpose |
+| Technology | What I Used It For |
 |-------------|----------|
-| **HTML5** | Structure and semantic content. |
-| **CSS3** | Styling, layout, and visual design. |
-| **Bootstrap 5** | Responsive layout, grid system, and pre-built components. |
-| **Font Awesome** | Icons for social media and UI elements. |
-| **Git & GitHub** | Version control and repository hosting. |
-| **GitHub Pages** | Project deployment platform. |
+| **HTML5** | The basic structure of the page |
+| **CSS3** | All the styling - colors, fonts, spacing, etc. |
+| **Bootstrap 5** | Made the responsive grid way easier! Used it for the navbar and cards layout |
+| **Git & GitHub** | Saving my code and tracking changes (still getting used to this) |
+| **VS Code** | The code editor I used to write everything |
+| **GitHub Pages** | To host the website for free |
+| **Sourcetree desktop** | To host the website for free |
+
 
 ---
 
