@@ -14,7 +14,6 @@ body {
   overflow: hidden;
 }
 
-
 /* Hero image */
 .hero-image img {
   display: block;
@@ -26,14 +25,14 @@ body {
 /* Hero text overlay */
 .hero-text {
   position: absolute;
-  top: 25%;
+  top: 24%;
   left: 5%;
   transform: translateY(-50%);
   color: #fff;
-  z-index: 1;
-
+  z-index: 2;
   display: inline-block;
-  max-width: min(90vw, 1000px);
+  width: 90%;
+  max-width: 1000px;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.35);
   border-radius: 8px;
@@ -42,7 +41,7 @@ body {
 .hero-text h1 {
   margin: 0 0 .25rem;
   font-family: Georgia, "Times New Roman", serif;
-
+  font-weight: 600;
 }
 
 .hero-text h2 {
@@ -103,14 +102,14 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-/* Responsiveness for large screens */
+/* Large screens */
 @media (min-width: 992px) {
   .hero-text h1 {
     white-space: nowrap;
   }
 }
 
-/* Responsivenes for small screens*/
+/* Small screens */
 @media (max-width: 768px) {
   .hero-text h1 {
     font-size: 1.75rem;
@@ -120,173 +119,232 @@ body {
     font-size: 1.125rem;
   }
 
-  /* Section divider */
-  .section-divider {
-    height: 3px;
-    background: linear-gradient(to right,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(139, 69, 19, 0.6) 20%,
-        rgba(160, 82, 45, 0.8) 50%,
-        rgba(139, 69, 19, 0.6) 80%,
-        rgba(0, 0, 0, 0) 100%);
-    margin: 0;
+  .hero-discussion h1 {
+    font-size: 1.5rem;
   }
 
-  /* Book discussions section */
-  .books-section {
-    background: linear-gradient(135deg, #2c2416 0%, #3d3427 50%, #2c2416 100%);
-    min-height: 100vh;
+  .hero-discussion .lead {
+    font-size: 1rem;
   }
+}
 
+/* Section divider */
+.section-divider {
+  height: 3px;
+  background: linear-gradient(to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(139, 69, 19, 0.6) 20%,
+      rgba(160, 82, 45, 0.8) 50%,
+      rgba(139, 69, 19, 0.6) 80%,
+      rgba(0, 0, 0, 0) 100%);
+  margin: 0;
+}
+
+/* Book discussions section */
+.books-section {
+  background: linear-gradient(135deg, #2c2416 0%, #3d3427 50%, #2c2416 100%);
+  min-height: 100vh;
+}
+
+.section-title {
+  color: #f5e6d3;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.section-subtitle {
+  color: #d4c4a8;
+  font-size: 1.1rem;
+  font-style: italic;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Book card styling */
+.book-card {
+  background: linear-gradient(145deg, #f5e6d3 0%, #e8d5b7 100%);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Book cover image container */
+.book-image-wrapper {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #8b6f47 0%, #6b5537 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.book-cover {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Book details section */
+.book-details {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-title {
+  color: #3d2817;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.book-author {
+  color: #8b6f47;
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.book-description {
+  color: #5a4a3a;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  flex: 1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Book event info */
+.book-info {
+  border-top: 2px solid #d4c4a8;
+  padding-top: 1rem;
+  margin-top: auto;
+  text-align: center;
+}
+
+.event-date {
+  color: #5a4a3a;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Booking button */
+.btn-book {
+  display: inline-block;
+  background: linear-gradient(135deg, #8b6f47 0%, #6b5537 100%);
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.btn-book:hover {
+  background: linear-gradient(135deg, #6b5537 0%, #5a4a3a 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+/* Monthly pass banner */
+.special-offer {
+  background: linear-gradient(135deg, #c9a961 0%, #b8935a 50%, #a67c52 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  border: 3px solid #8b6f47;
+}
+
+.offer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.offer-title {
+  color: #2c2416;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.offer-description {
+  color: #3d2817;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Monthly pass button */
+.btn-monthly-pass {
+  display: inline-block;
+  background: #3d2817;
+  color: #fff;
+  padding: 1rem 3rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.btn-monthly-pass:hover {
+  background: #2c2416;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
   .section-title {
-    color: #f5e6d3;
-    font-size: 2.5rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2rem;
   }
 
-  .section-subtitle {
-    color: #d4c4a8;
-    font-size: 1.1rem;
-    font-style: italic;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  }
-
-  /* Book card styling */
-  .book-card {
-    background: linear-gradient(145deg, #f5e6d3 0%, #e8d5b7 100%);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* Book cover image container */
   .book-image-wrapper {
-    width: 100%;
-    height: 350px;
-    overflow: hidden;
-    background: linear-gradient(to bottom, #8b6f47 0%, #6b5537 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-  }
-
-  .book-cover {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  }
-
-  /* Book details section */
-  .book-details {
-    padding: 1.5rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+    height: 280px;
   }
 
   .book-title {
-    color: #3d2817;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    line-height: 1.3;
-    font-family: Georgia, "Times New Roman", serif;
-  }
-
-  .book-author {
-    color: #8b6f47;
-    font-size: 1rem;
-    font-style: italic;
-    margin-bottom: 1rem;
-    font-family: Georgia, "Times New Roman", serif;
-  }
-
-  .book-description {
-    color: #5a4a3a;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 1.25rem;
-    flex: 1;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  }
-
-  /* Book event info */
-  .book-info {
-    border-top: 2px solid #d4c4a8;
-    padding-top: 1rem;
-    margin-top: auto;
-    text-align: center;
-  }
-
-  .event-date {
-    color: #5a4a3a;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    line-height: 1.5;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  }
-
-  /* Booking button */
-  .btn-book {
-    display: inline-block;
-    background: linear-gradient(135deg, #8b6f47 0%, #6b5537 100%);
-    color: #fff;
-    padding: 0.75rem 2rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  }
-
-  .btn-book:hover {
-    background: linear-gradient(135deg, #6b5537 0%, #5a4a3a 100%);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-    color: #fff;
-  }
-
-  /* Monthly pass banner */
-  .special-offer {
-    background: linear-gradient(135deg, #c9a961 0%, #b8935a 50%, #a67c52 100%);
-    border-radius: 12px;
-    padding: 2rem;
-    text-align: center;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    border: 3px solid #8b6f47;
-  }
-
-  .offer-content {
-    max-width: 800px;
-    margin: 0 auto;
+    font-size: 1.3rem;
   }
 
   .offer-title {
-    color: #2c2416;
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
-    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
   }
 
-  .offer-description {
-    color: #3d2817;
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  .btn-monthly-pass {
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
   }
 }
