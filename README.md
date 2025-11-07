@@ -125,16 +125,49 @@ The hero image took me ages to get right because it was either too tall or too s
 
 ---
 
-## 🚀 Features
+# 🚀 What's Working
 
-### **Implemented**
- 
+### **Features I've Built**
 
-### **Future Enhancements**
-- Add a “Testimonials” carousel with reader feedback.  
-- Include a “Featured Book of the Month” section.  
-- Integrate form validation for contact and booking forms.  
+1. **Navigation Bar**
+   - Stays at the top when you scroll (used Bootstrap's `fixed-top` class)
+   - Turns into a hamburger menu on phones
+   - Dark theme to match the overall look
 
+2. **Hero Section**
+   - Big background image that adjusts to different screen sizes (this took me forever to get right!)
+   - Reading quote from George R.R. Martin
+   - Discussion Guide section explaining how the discussions work
+   - Cool gradient divider line that fades in and out
+
+3. **Book Cards Section**
+   - 6 book cards in a grid layout (Bootstrap's grid system made this much easier)
+   - Shows 3 cards per row on desktop, 2 on tablet, 1 on mobile
+   - Each card has:
+     - Book cover image
+     - Title and author
+     - Description of the book
+     - When the discussion is happening
+     - A button to book your spot
+   - Cards lift up when you hover over them (used CSS transform which I learned from a YouTube tutorial)
+
+4. **Monthly Pass Banner**
+   - Special section for people who want to join all discussions
+   - Golden gradient background to make it stand out
+   - "Get Monthly Pass" button
+
+5. **Footer**
+   - Contact info (email, phone, address)
+   - Quick links back to sections
+   - Copyright notice
+   - Matches the dark navbar theme
+
+6. **Responsive Design**
+   - Everything works on different screen sizes
+   - Used Chrome DevTools to test different devices
+   - Cards stack nicely on mobile
+   - Reduced the header height because it was taking up too much space
+   
 ---
 
 ## 🧭 Testing
