@@ -91,7 +91,7 @@ body {
   border-radius: 8px;
 }
 
-.hero-discussion h1 {
+.hero-discussion h2 {
   font-family: Georgia, "Times New Roman", serif;
   font-weight: 600;
 }
@@ -119,7 +119,7 @@ body {
     font-size: 1.125rem;
   }
 
-  .hero-discussion h1 {
+  .hero-discussion h2 {
     font-size: 1.5rem;
   }
 
