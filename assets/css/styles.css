@@ -347,12 +347,7 @@ footer a:hover {
   text-decoration: underline !important;
 }
 
-/* Modal sheet */
-.modal-toggle {
-  display: none;
-}
-
-/* Hide modal by default */
+/* Modal overlay - hidden by default */
 .modal-overlay {
   display: none;
   position: fixed;
@@ -361,4 +356,89 @@ footer a:hover {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
+}
+
+/* Show modal when targeted in URL */
+.modal-overlay:target {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Modal container - centers and sizes the modal */
+.modal-container {
+  background: white;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Modal header layout */
+.modal-header {
+  padding: 1.5rem;
+  position: relative;
+}
+
+.modal-book-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modal-book-cover {
+  width: 60px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Modal form layout */
+.modal-form {
+  padding: 2rem 1.5rem 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Modal footer layout */
+.modal-footer {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  padding-top: 1.5rem;
+  border-top: 2px solid #ddd;
+}
+
+/* Close button */
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  line-height: 1;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: #000;
 }
