@@ -242,6 +242,45 @@
         </section>
     </main>
 
+    <!-- Booking Modal - Kane and Abel -->
+    <input type="checkbox" id="modal-kane-abel" class="modal-toggle">
+    <div class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="modal-book-header">
+                    <img src="assets/images/kane_and_abel.jpeg" alt="Kane and Abel book cover" class="modal-book-cover">
+                    <div>
+                        <h3>Kane and Abel</h3>
+                        <p class="modal-book-date">Monday 2 December 2025 | 18:00 - 20:00</p>
+                    </div>
+                </div>
+                <label for="modal-kane-abel" class="modal-close" aria-label="Close modal">&times;</label>
+            </div>
+            <form class="modal-form" method="post" action="">
+                <div class="form-group">
+                    <label for="kane-firstName">First Name</label>
+                    <input type="text" id="kane-firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="kane-lastName">Last Name</label>
+                    <input type="text" id="kane-lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="kane-email">Email Address</label>
+                    <input type="email" id="kane-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="kane-phone">Phone Number</label>
+                    <input type="tel" id="kane-phone" name="phone" pattern="[0-9+\s\-()]+" title="Please enter a valid phone number" required>
+                </div>
+                <div class="modal-footer">
+                    <label for="modal-kane-abel" class="btn btn-secondary">Cancel</label>
+                    <button type="submit" class="btn btn-book">Confirm Booking</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer id="contact" class="bg-dark text-light pt-5 pb-4 mt-auto">
         <div class="container">
