@@ -368,18 +368,22 @@ footer a:hover {
 
 /* Modal container - centers and sizes the modal */
 .modal-container {
-  background: white;
+  background: linear-gradient(145deg, #f5e6d3 0%, #e8d5b7 100%);
   border-radius: 12px;
   width: 100%;
   max-width: 500px;
   max-height: 90vh;
   overflow-y: auto;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
 }
 
 /* Modal header layout */
 .modal-header {
+  background: linear-gradient(135deg, #8b6f47 0%, #6b5537 100%);
   padding: 1.5rem;
+  border-radius: 12px 12px 0 0;
   position: relative;
+  color: #fff;
 }
 
 .modal-book-header {
@@ -393,6 +397,22 @@ footer a:hover {
   height: 80px;
   object-fit: cover;
   border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+.modal-book-date {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  opacity: 0.95;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 /* Modal form layout */
@@ -407,15 +427,36 @@ footer a:hover {
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
+  color: #3d2817;
   font-weight: 600;
+  font-size: 0.95rem;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 .form-group input {
   width: 100%;
   padding: 0.75rem;
-  border: 2px solid #ddd;
+  border: 2px solid #d4c4a8;
   border-radius: 6px;
   font-size: 1rem;
+  background: #fff;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #8b6f47;
+  box-shadow: 0 0 0 3px rgba(139, 111, 71, 0.2);
+}
+
+.form-group input:invalid:not(:placeholder-shown) {
+  border-color: #d9534f;
+}
+
+.form-group input:valid:not(:placeholder-shown) {
+  border-color: #5cb85c;
 }
 
 /* Modal footer layout */
@@ -424,7 +465,7 @@ footer a:hover {
   gap: 1rem;
   justify-content: flex-end;
   padding-top: 1.5rem;
-  border-top: 2px solid #ddd;
+  border-top: 2px solid #d4c4a8;
 }
 
 /* Close button */
@@ -434,11 +475,34 @@ footer a:hover {
   right: 1rem;
   font-size: 2rem;
   line-height: 1;
-  color: #333;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
 .modal-close:hover {
-  color: #000;
+  transform: scale(1.2);
+  color: #fff;
+}
+
+/* Secondary button for cancel */
+.btn-secondary {
+  background: #6c757d;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  background: #5a6268;
+  transform: translateY(-2px);
+  color: #fff;
 }
