@@ -175,14 +175,19 @@ The hero image took me ages to get right because it was either too tall or too s
 4. **Monthly Pass Banner**
    - Special section for people who want to join all discussions
    - Golden gradient background to make it stand out
-   - "Get Monthly Pass" button
+   - "Get Monthly Pass" button that opens a booking modal
+   - Monthly pass modal lists all 6 included books
 
 5. **Booking Modal Forms**
    - CSS-only modal popup for booking spots (no JavaScript!)
-   - Opens when you click "Book Your Spot" on any book card
-   - Each modal shows:
+   - Opens when you click "Book Your Spot" on any book card OR "Get Monthly Pass"
+   - Book modals show:
      - Book cover thumbnail in the header
      - Book title and event date/time
+   - Monthly pass modal shows:
+     - "December Monthly Pass" title
+     - List of all 6 included books
+   - All modals include:
      - Form with fields for First Name, Last Name, Email, and Phone Number
      - All fields are required with HTML5 validation
    - Used CSS :target pseudo-class to show/hide the modal
@@ -297,6 +302,9 @@ The site was tested across multiple devices and screen sizes to ensure proper re
 | Booking Modal - Phone Validation | Enter invalid phone number | Browser validates phone number format | Works as expected | ✅ Pass |
 | Booking Modal - Submit | Fill all fields correctly and submit | Form submits and page refreshes (no backend) | Works as expected | ✅ Pass |
 | Booking Modal - Correct Book Info | Open modal for each book | Each modal displays correct book cover, title, and date | All 6 modals correct | ✅ Pass |
+| Monthly Pass Modal - Open | Click "Get Monthly Pass" button | Modal opens with smooth animation | Works as expected | ✅ Pass |
+| Monthly Pass Modal - Book List | Check modal header | All 6 book titles are listed | All books displayed correctly | ✅ Pass |
+| Monthly Pass Modal - Form Validation | Try to submit empty monthly pass form | Browser shows validation messages | Works as expected | ✅ Pass |
 | External Links - Social Media | Click Facebook/Twitter/Instagram | Opens in new tab | Works as expected | ✅ Pass |
 | External Links - Target Attribute | Check all external links | All have `target="_blank"` and `rel` attribute | Correct implementation | ✅ Pass |
 | Footer Links - Quick Links | Click footer "Discussion Guide" | Navigates to correct section | Works as expected | ✅ Pass |
