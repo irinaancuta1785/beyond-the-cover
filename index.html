@@ -473,8 +473,36 @@
     <!-- Booking Modal - Monthly Pass -->
     <div id="modal-monthly-pass" class="modal-overlay">
         <div class="modal-container">
-            <a href="#" class="modal-close" aria-label="Close modal">&times;</a>
-            <p>Monthly Pass Modal</p>
+            <div class="modal-header">
+                <div>
+                    <h3>December Monthly Pass</h3>
+                    <p class="modal-book-date">All 6 Book Discussions | December 2025</p>
+                    <p class="modal-pass-info">Includes: Kane and Abel, Notre-Dame de Paris, Les Misérables, Anna Karenina, Shogun, and Journey to the Center of the Earth</p>
+                </div>
+                <a href="#" class="modal-close" aria-label="Close modal">&times;</a>
+            </div>
+            <form class="modal-form" method="post" action="">
+                <div class="form-group">
+                    <label for="monthly-firstName">First Name</label>
+                    <input type="text" id="monthly-firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="monthly-lastName">Last Name</label>
+                    <input type="text" id="monthly-lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="monthly-email">Email Address</label>
+                    <input type="email" id="monthly-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="monthly-phone">Phone Number</label>
+                    <input type="tel" id="monthly-phone" name="phone" pattern="[0-9+\s\-()]+" title="Please enter a valid phone number" required>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-secondary">Cancel</a>
+                    <button type="submit" class="btn btn-book">Confirm Booking</button>
+                </div>
+            </form>
         </div>
     </div>
 
