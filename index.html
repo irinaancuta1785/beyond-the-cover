@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
     <!-- Navigation -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
         <div class="container-fluid">
@@ -33,10 +33,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#discussion-guide">Discussion Guide</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#featured-books">Join a book club</a>
@@ -56,12 +53,12 @@
     </nav>
 
     <!-- Hero -->
-    <header class="hero-image">
+    <header id="home" class="hero-image">
         <img src="assets/images/books_presentation.jpg" class="d-block w-100"
             alt="Stack of three books with a sweet treat and glasses.">
 
         <div class="hero-text">
-            <h1>“A reader lives a thousand lives before he dies…”</h1>
+            <h1>"A reader lives a thousand lives before he dies…"</h1>
             <h2>The man who never reads lives only one.</h2>
             <p class="author">— George R. R. Martin</p>
         </div>
@@ -70,7 +67,7 @@
         <hr class="hero-divider-wide">
 
         <!-- Discussion guide -->
-        <section id="discussion-guide" class="hero-discussion">
+        <div class="hero-discussion">
             <h2 class="mb-3">Discussion Guide</h2>
             <p class="lead">
                 Every great book deserves a great conversation. Share what moved you, question what puzzled you,
@@ -79,7 +76,7 @@
                 your voice adds richness to our literary journey. Bring your thoughts, your favorite passages,
                 and your curiosity—let's explore these worlds together.
             </p>
-        </section>
+        </div>
     </header>
 
     <!-- Divider -->
@@ -662,10 +659,8 @@
                 <div class="col-6 col-md-3 col-lg-2">
                     <h6 class="mb-3">Quick links</h6>
                     <ul class="list-unstyled mb-0">
-                        <li><a class="link-light text-decoration-none" href="#">Home</a></li>
-                        <li><a class="link-light text-decoration-none" href="#discussion-guide">Discussion Guide</a>
-                        </li>
-                        <li><a class="link-light text-decoration-none" href="#">Join a book club</a></li>
+                        <li><a class="link-light text-decoration-none" href="#home">Home</a></li>
+                        <li><a class="link-light text-decoration-none" href="#featured-books">Join a book club</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">

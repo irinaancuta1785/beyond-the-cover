@@ -4,13 +4,20 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: #333;
+  scroll-padding-top: 54px;
+}
+
+/* Add scroll margin to all sections to prevent navbar overlap */
+section[id],
+header[id] {
+  scroll-margin-top: 54px;
 }
 
 /* Navbar spacing */
 .hero-image {
   position: relative;
   margin-top: 56px;
-  max-height: 70vh;
+  min-height: 85vh;
   overflow: hidden;
 }
 
