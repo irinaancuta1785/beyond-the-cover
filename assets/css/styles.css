@@ -360,6 +360,12 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
+#testimonials .testimonial-stars {
+  color: #c9a961;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
 #testimonials .card-text {
   color: #3d2817;
   font-style: italic;
