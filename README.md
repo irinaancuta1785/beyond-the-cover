@@ -177,13 +177,27 @@ The hero image took me ages to get right because it was either too tall or too s
    - Golden gradient background to make it stand out
    - "Get Monthly Pass" button
 
-5. **Footer**
+5. **Booking Modal Forms**
+   - CSS-only modal popup for booking spots (no JavaScript!)
+   - Opens when you click "Book Your Spot" on any book card
+   - Each modal shows:
+     - Book cover thumbnail in the header
+     - Book title and event date/time
+     - Form with fields for First Name, Last Name, Email, and Phone Number
+     - All fields are required with HTML5 validation
+   - Used CSS :target pseudo-class to show/hide the modal
+   - Smooth fade-in and scale-up animation when opening
+   - Close button (×) and Cancel button to dismiss the modal
+   - Submit button (currently refreshes page - no backend yet)
+   - Matches the brown/tan color theme of the rest of the site
+
+6. **Footer**
    - Contact info (email, phone, address)
    - Quick links back to sections
    - Copyright notice
    - Matches the dark navbar theme
 
-6. **Responsive Design**
+7. **Responsive Design**
    - Everything works on different screen sizes
    - Used Chrome DevTools to test different devices
    - Cards stack nicely on mobile
@@ -275,6 +289,14 @@ The site was tested across multiple devices and screen sizes to ensure proper re
 | Navigation - Mobile Toggle | Click hamburger icon on mobile | Menu expands/collapses | Works as expected | ✅ Pass |
 | Book Cards - Hover Effect | Hover over any book card | Card lifts up with shadow animation | Works as expected | ✅ Pass |
 | Book Cards - Responsive Grid | Resize browser window | Cards rearrange: 3→2→1 columns | Works as expected | ✅ Pass |
+| Booking Modal - Open | Click "Book Your Spot" button | Modal opens with smooth fade-in and scale animation | Works as expected | ✅ Pass |
+| Booking Modal - Close Button | Click × close button in modal | Modal closes and returns to main page | Works as expected | ✅ Pass |
+| Booking Modal - Cancel Button | Click "Cancel" button | Modal closes and returns to main page | Works as expected | ✅ Pass |
+| Booking Modal - Form Validation | Try to submit empty form | Browser shows validation messages for required fields | Works as expected | ✅ Pass |
+| Booking Modal - Email Validation | Enter invalid email format | Browser shows "Please enter a valid email" message | Works as expected | ✅ Pass |
+| Booking Modal - Phone Validation | Enter invalid phone number | Browser validates phone number format | Works as expected | ✅ Pass |
+| Booking Modal - Submit | Fill all fields correctly and submit | Form submits and page refreshes (no backend) | Works as expected | ✅ Pass |
+| Booking Modal - Correct Book Info | Open modal for each book | Each modal displays correct book cover, title, and date | All 6 modals correct | ✅ Pass |
 | External Links - Social Media | Click Facebook/Twitter/Instagram | Opens in new tab | Works as expected | ✅ Pass |
 | External Links - Target Attribute | Check all external links | All have `target="_blank"` and `rel` attribute | Correct implementation | ✅ Pass |
 | Footer Links - Quick Links | Click footer "Discussion Guide" | Navigates to correct section | Works as expected | ✅ Pass |
@@ -313,16 +335,16 @@ The site was tested across multiple devices and screen sizes to ensure proper re
 | User Story | How It's Addressed | Evidence | Pass/Fail |
 |------------|-------------------|----------|-----------|
 | Story 1: Understand site purpose immediately | Hero section with clear quote and "Discussion Guide" explanation | Hero displays prominently on landing | ✅ Pass |
-| Story 2: Browse available discussions | 6 book cards displayed in clear grid format | All cards visible with book info | ✅ Pass |
-| Story 3: See dates and times clearly | Each card shows event date and time | Dates displayed in readable format | ✅ Pass |
+| Story 2: Browse available discussions | 6 book cards displayed in clear grid format with "Book Your Spot" buttons | All cards visible with booking capability | ✅ Pass |
+| Story 3: See dates and times clearly | Each card and modal shows event date and time | Dates displayed in card and confirmed in modal header | ✅ Pass |
 | Story 4: Determine book club fit | Book descriptions and classic literature selection visible | Descriptions present on each card | ✅ Pass |
 | Story 5: Understand how discussions work | "Discussion Guide" section explains the process | Section accessible from navigation | ✅ Pass |
-| Story 6: Quickly find upcoming discussions | Clear "Upcoming Book Discussions" heading and organized cards | Information easy to locate | ✅ Pass |
+| Story 6: Quickly find upcoming discussions | Clear "Upcoming Book Discussions" heading, organized cards, and easy booking via modal forms | Information easy to locate and book | ✅ Pass |
 | Story 7: Access contact information | Footer contains email, phone, and address | Contact section accessible via nav | ✅ Pass |
-| Story 8: Navigate smoothly | Sticky navigation with smooth scroll | All nav links work correctly | ✅ Pass |
+| Story 8: Navigate smoothly | Sticky navigation with smooth scroll, modals open/close smoothly | All nav links and modals work correctly | ✅ Pass |
 | Story 9: Learn about monthly passes | Prominent golden banner with monthly pass info | Banner stands out visually | ✅ Pass |
 | Story 10: See book details for preparation | Book titles, authors, and descriptions provided | All information clearly displayed | ✅ Pass |
-| Story 11: Use site on mobile | Responsive design with mobile-first approach | Site fully functional on all mobile devices tested | ✅ Pass |
+| Story 11: Use site on mobile | Responsive design with mobile-first approach, modals work on all devices | Site fully functional on all mobile devices tested | ✅ Pass |
 
 ---
 
@@ -333,6 +355,7 @@ The site was tested across multiple devices and screen sizes to ensure proper re
 | Heading Hierarchy Warning | Multiple h1 elements on page causing accessibility issues | Changed "Discussion Guide" heading from h1 to h2, updated corresponding CSS | ✅ Fixed |
 | HTML Validation Warnings | Trailing slashes on void elements | Removed `/` from self-closing meta tags per HTML5 standard | ✅ Fixed |
 | Hero Image Height | Hero section too tall on some screens, pushing content down | Added `max-height: 70vh` to `.hero-image` class | ✅ Fixed |
+| Modal Animation Not Working | Modal appeared instantly without smooth fade-in animation | Changed from `display: none` to `visibility: hidden` with `opacity: 0` because CSS transitions don't work with display property changes | ✅ Fixed |
 
 ---
 
