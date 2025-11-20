@@ -4,13 +4,13 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: #333;
-  scroll-padding-top: 54px;
+  scroll-padding-top: 3.375rem;
 }
 
 /* Add scroll margin to all sections to prevent navbar overlap */
 section[id],
 header[id] {
-  scroll-margin-top: 54px;
+  scroll-margin-top: 3.375rem;
 }
 
 .navbar-brand {
@@ -18,13 +18,13 @@ header[id] {
   align-items: center;
   gap: 0.5rem;
   font-weight: 700;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.02rem;
 }
 
 .navbar-brand .brand-logo {
-  height: 48px;
-  width: 48px;
-  border-radius: 6px;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 0.375rem;
   object-fit: cover;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
 }
@@ -32,7 +32,7 @@ header[id] {
 /* Navbar spacing */
 .hero-image {
   position: relative;
-  margin-top: 56px;
+  margin-top: 3.5rem;
   min-height: 85vh;
   overflow: hidden;
   background: #000;
@@ -57,12 +57,12 @@ header[id] {
   color: #fff;
   z-index: 2;
   text-align: center;
-  max-width: 1050px;
+  max-width: 65.625rem;
   display: inline-block;
   width: 90%;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.35);
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 .hero-text h1 {
@@ -90,7 +90,7 @@ header[id] {
   position: absolute;
   left: 3%;
   right: 3%;
-  height: 3px;
+  height: 0.1875rem;
   border: 0;
   background: linear-gradient(to right,
       rgba(0, 0, 0, 0) 0%,
@@ -112,10 +112,10 @@ header[id] {
   text-align: center;
   color: #fff;
   width: 90%;
-  max-width: 900px;
+  max-width: 56.25rem;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.35);
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 .hero-discussion h2 {
@@ -129,35 +129,9 @@ header[id] {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-/* Large screens */
-@media (min-width: 992px) {
-  .hero-text h1 {
-    white-space: nowrap;
-  }
-}
-
-/* Small screens */
-@media (max-width: 768px) {
-  .hero-text h1 {
-    font-size: 1.75rem;
-  }
-
-  .hero-text h2 {
-    font-size: 1.125rem;
-  }
-
-  .hero-discussion h2 {
-    font-size: 1.5rem;
-  }
-
-  .hero-discussion .lead {
-    font-size: 1rem;
-  }
-}
-
 /* Section divider */
 .section-divider {
-  height: 3px;
+  height: 0.1875rem;
   background: linear-gradient(to right,
       rgba(0, 0, 0, 0) 0%,
       rgba(139, 69, 19, 0.6) 20%,
@@ -177,7 +151,7 @@ header[id] {
   color: #f5e6d3;
   font-size: 2.5rem;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   font-family: Georgia, "Times New Roman", serif;
 }
@@ -192,21 +166,21 @@ header[id] {
 /* Book card styling */
 .book-card {
   background: linear-gradient(145deg, #f5e6d3 0%, #e8d5b7 100%);
-  border-radius: 12px;
+  border-radius: 0.75rem;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: none;
 }
 
 .book-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-0.5rem);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
 /* Book cover image container */
 .book-image-wrapper {
   width: 100%;
-  height: 350px;
+  height: 21.875rem;
   overflow: hidden;
   background: linear-gradient(to bottom, #8b6f47 0%, #6b5537 100%);
   display: flex;
@@ -219,7 +193,7 @@ header[id] {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -256,7 +230,7 @@ header[id] {
 
 /* Book event info */
 .book-info {
-  border-top: 2px solid #d4c4a8;
+  border-top: 0.125rem solid #d4c4a8;
   padding-top: 1rem;
   text-align: center;
 }
@@ -275,7 +249,7 @@ header[id] {
   background: linear-gradient(135deg, #8b6f47 0%, #6b5537 100%);
   color: #fff;
   padding: 0.75rem 2rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   font-weight: 600;
   font-size: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -285,7 +259,7 @@ header[id] {
 .btn-book:hover,
 .btn-book:focus {
   background: linear-gradient(135deg, #6b5537 0%, #5a4a3a 100%);
-  transform: translateY(-2px);
+  transform: translateY(-0.125rem);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
   color: #fff;
 }
@@ -293,15 +267,15 @@ header[id] {
 /* Monthly pass banner */
 .special-offer {
   background: linear-gradient(135deg, #c9a961 0%, #b8935a 50%, #a67c52 100%);
-  border-radius: 12px;
+  border-radius: 0.75rem;
   padding: 2rem;
   text-align: center;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-  border: 3px solid #8b6f47;
+  border: 0.1875rem solid #8b6f47;
 }
 
 .offer-content {
-  max-width: 800px;
+  max-width: 50rem;
   margin: 0 auto;
 }
 
@@ -334,7 +308,7 @@ header[id] {
   background: #3d2817;
   color: #fff;
   padding: 1rem 3rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   font-weight: 700;
   font-size: 1.2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -344,33 +318,9 @@ header[id] {
 .btn-monthly-pass:hover,
 .btn-monthly-pass:focus {
   background: #2c2416;
-  transform: translateY(-2px);
+  transform: translateY(-0.125rem);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
   color: #fff;
-}
-
-/* Mobile responsive */
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .book-image-wrapper {
-    height: 280px;
-  }
-
-  .book-title {
-    font-size: 1.3rem;
-  }
-
-  .offer-title {
-    font-size: 1.5rem;
-  }
-
-  .btn-monthly-pass {
-    font-size: 1rem;
-    padding: 0.75rem 2rem;
-  }
 }
 
 /* Testimonials section */
@@ -391,14 +341,14 @@ header[id] {
 }
 
 #testimonials .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-0.3125rem);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 #testimonials .testimonial-stars {
   color: #c9a961;
   font-size: 1.5rem;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
 }
 
 #testimonials .card-text {
@@ -430,7 +380,7 @@ header[id] {
   background: linear-gradient(145deg, #f5e6d3 0%, #e8d5b7 100%);
   border: none;
   margin-bottom: 1rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   overflow: hidden;
 }
 
@@ -448,7 +398,7 @@ header[id] {
 }
 
 #faq .accordion-button:focus {
-  box-shadow: 0 0 0 3px rgba(139, 111, 71, 0.3);
+  box-shadow: 0 0 0 0.1875rem rgba(139, 111, 71, 0.3);
   border: none;
 }
 
@@ -468,21 +418,21 @@ footer a:hover {
 
 .toast-banner {
   position: fixed;
-  top: 70px;
+  top: 4.375rem;
   left: 50%;
-  transform: translate(-50%, -12px);
+  transform: translate(-50%, -0.75rem);
   width: calc(100% - 2rem);
-  max-width: 520px;
+  max-width: 32.5rem;
   background: linear-gradient(145deg, #f5e6d3 0%, #e8d5b7 100%);
   color: #3d2817;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
   padding: 1rem 1rem 1rem 1.25rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  border: 2px solid #d4c4a8;
+  border: 0.125rem solid #d4c4a8;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
@@ -506,7 +456,7 @@ footer a:hover {
   font-size: 1.5rem;
   line-height: 1;
   padding: 0.25rem 0.5rem;
-  border-radius: 6px;
+  border-radius: 0.375rem;
   transition: background 0.2s ease, transform 0.2s ease;
 }
 
@@ -541,9 +491,9 @@ footer a:hover {
 /* Modal container - centers and sizes the modal */
 .modal-container {
   background: linear-gradient(145deg, #f5e6d3 0%, #e8d5b7 100%);
-  border-radius: 12px;
+  border-radius: 0.75rem;
   width: 100%;
-  max-width: 500px;
+  max-width: 31.25rem;
   max-height: 90vh;
   overflow-y: auto;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
@@ -560,7 +510,7 @@ footer a:hover {
 .modal-header {
   background: linear-gradient(135deg, #8b6f47 0%, #6b5537 100%);
   padding: 1.5rem;
-  border-radius: 12px 12px 0 0;
+  border-radius: 0.75rem 0.75rem 0 0;
   position: relative;
   color: #fff;
 }
@@ -572,10 +522,10 @@ footer a:hover {
 }
 
 .modal-book-cover {
-  width: 60px;
-  height: 80px;
+  width: 3.75rem;
+  height: 5rem;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -621,8 +571,8 @@ footer a:hover {
 }
 
 .modal-form .form-control {
-  border: 2px solid #d4c4a8;
-  border-radius: 6px;
+  border: 0.125rem solid #d4c4a8;
+  border-radius: 0.375rem;
   font-size: 1rem;
   background: #fff;
   color: #333;
@@ -650,7 +600,7 @@ footer a:hover {
   gap: 1rem;
   justify-content: flex-end;
   padding-top: 1.5rem;
-  border-top: 2px solid #d4c4a8;
+  border-top: 0.125rem solid #d4c4a8;
 }
 
 /* Close button */
@@ -676,7 +626,7 @@ footer a:hover {
   background: #6c757d;
   color: #fff;
   padding: 0.75rem 1.5rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   font-weight: 600;
   font-size: 1rem;
   border: none;
@@ -688,6 +638,52 @@ footer a:hover {
 
 .btn-secondary:hover {
   background: #5a6268;
-  transform: translateY(-2px);
+  transform: translateY(-0.125rem);
   color: #fff;
+}
+
+/* Media queries */
+@media (min-width: 62rem) {
+  .hero-text h1 {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 48rem) {
+  .hero-text h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.125rem;
+  }
+
+  .hero-discussion h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-discussion .lead {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .book-image-wrapper {
+    height: 17.5rem;
+  }
+
+  .book-title {
+    font-size: 1.3rem;
+  }
+
+  .offer-title {
+    font-size: 1.5rem;
+  }
+
+  .btn-monthly-pass {
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+  }
 }
