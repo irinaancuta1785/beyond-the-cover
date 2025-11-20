@@ -121,7 +121,7 @@ I read on Stack Overflow that you should use different fonts for headings and bo
 I made the book titles bold and put author names in italics to make them stand out. Took me a while to figure out the font-family CSS but I found some good examples on W3Schools.
 
 ### **Imagery**
-I found all my images on free stock photo websites like Pexels and Unsplash:
+I found all my images on free stock photo websites like Pexels and Unsplash or Pinterest:
 - The main background image shows books with a cozy vibe
 - Each book discussion has an actual book cover image so people can see what the book looks like
 - I made sure all images have alt text for accessibility (learned this is important in our web development module)
@@ -141,7 +141,7 @@ The hero image took me ages to get right because it was either too tall or too s
 | **Git & GitHub** | Saving my code and tracking changes (still getting used to this) |
 | **VS Code** | The code editor I used to write everything |
 | **GitHub Pages** | To host the website for free |
-| **Sourcetree desktop** | To host the website for free |
+| **Sourcetree desktop** | To faster commit, push and add messages |
 
 
 ---
@@ -238,13 +238,7 @@ The site was tested across multiple devices and screen sizes to ensure proper re
 | Device | Screen Size | Browser | Result | Notes |
 |--------|-------------|---------|--------|-------|
 | Desktop PC | 1920x1080 | Chrome 120 | ✅ Pass | All elements display correctly, 3-column book grid |
-| MacBook Pro | 1440x900 | Safari 17 | ✅ Pass | Navigation and cards respond well |
-| iPad Air | 820x1180 | Safari iOS | ✅ Pass | 2-column layout works perfectly |
-| iPad Mini | 768x1024 | Chrome | ✅ Pass | Cards transition smoothly to 2 columns |
 | iPhone 14 Pro | 393x852 | Safari iOS | ✅ Pass | Single column, navbar collapses to hamburger |
-| iPhone SE | 375x667 | Safari iOS | ✅ Pass | Content fits well on smaller screen |
-| Samsung Galaxy S21 | 360x800 | Chrome Android | ✅ Pass | Mobile layout functions correctly |
-| Samsung Galaxy Tab | 800x1280 | Chrome Android | ✅ Pass | Tablet layout displays properly |
 
 **Testing Method:**
 - Used Chrome DevTools Device Mode to simulate different devices
