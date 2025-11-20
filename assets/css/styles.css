@@ -18,7 +18,7 @@ header[id] {
   align-items: center;
   gap: 0.5rem;
   font-weight: 700;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.3px;
 }
 
 .navbar-brand .brand-logo {
@@ -90,7 +90,7 @@ header[id] {
   position: absolute;
   left: 3%;
   right: 3%;
-  height: 0.1875rem;
+  height: 3px;
   border: 0;
   background: linear-gradient(to right,
       rgba(0, 0, 0, 0) 0%,
@@ -131,7 +131,7 @@ header[id] {
 
 /* Section divider */
 .section-divider {
-  height: 0.1875rem;
+  height: 3px;
   background: linear-gradient(to right,
       rgba(0, 0, 0, 0) 0%,
       rgba(139, 69, 19, 0.6) 20%,
@@ -151,7 +151,7 @@ header[id] {
   color: #f5e6d3;
   font-size: 2.5rem;
   font-weight: 600;
-  letter-spacing: 0.0625rem;
+  letter-spacing: 1px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   font-family: Georgia, "Times New Roman", serif;
 }
@@ -230,7 +230,7 @@ header[id] {
 
 /* Book event info */
 .book-info {
-  border-top: 0.125rem solid #d4c4a8;
+  border-top: 2px solid #d4c4a8;
   padding-top: 1rem;
   text-align: center;
 }
@@ -259,7 +259,7 @@ header[id] {
 .btn-book:hover,
 .btn-book:focus {
   background: linear-gradient(135deg, #6b5537 0%, #5a4a3a 100%);
-  transform: translateY(-0.125rem);
+  transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
   color: #fff;
 }
@@ -271,7 +271,7 @@ header[id] {
   padding: 2rem;
   text-align: center;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-  border: 0.1875rem solid #8b6f47;
+  border: 3px solid #8b6f47;
 }
 
 .offer-content {
@@ -318,7 +318,7 @@ header[id] {
 .btn-monthly-pass:hover,
 .btn-monthly-pass:focus {
   background: #2c2416;
-  transform: translateY(-0.125rem);
+  transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
   color: #fff;
 }
@@ -341,14 +341,14 @@ header[id] {
 }
 
 #testimonials .card:hover {
-  transform: translateY(-0.3125rem);
+  transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 #testimonials .testimonial-stars {
   color: #c9a961;
   font-size: 1.5rem;
-  letter-spacing: 0.125rem;
+  letter-spacing: 2px;
 }
 
 #testimonials .card-text {
@@ -398,7 +398,7 @@ header[id] {
 }
 
 #faq .accordion-button:focus {
-  box-shadow: 0 0 0 0.1875rem rgba(139, 111, 71, 0.3);
+  box-shadow: 0 0 0 3px rgba(139, 111, 71, 0.3);
   border: none;
 }
 
@@ -432,7 +432,7 @@ footer a:hover {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  border: 0.125rem solid #d4c4a8;
+  border: 2px solid #d4c4a8;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
@@ -571,7 +571,7 @@ footer a:hover {
 }
 
 .modal-form .form-control {
-  border: 0.125rem solid #d4c4a8;
+  border: 2px solid #d4c4a8;
   border-radius: 0.375rem;
   font-size: 1rem;
   background: #fff;
@@ -600,7 +600,7 @@ footer a:hover {
   gap: 1rem;
   justify-content: flex-end;
   padding-top: 1.5rem;
-  border-top: 0.125rem solid #d4c4a8;
+  border-top: 2px solid #d4c4a8;
 }
 
 /* Close button */
@@ -638,7 +638,7 @@ footer a:hover {
 
 .btn-secondary:hover {
   background: #5a6268;
-  transform: translateY(-0.125rem);
+  transform: translateY(-2px);
   color: #fff;
 }
 
