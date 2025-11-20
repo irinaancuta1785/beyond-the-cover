@@ -566,7 +566,7 @@ beyond-the-cover/
 ## 🧾 Credits and Attribution
 
 - All content and code written by **Irina Ancuta** (student author).  
-- Stock photos sourced from [Pexels](https://pexels.com) and [Unsplash](https://unsplash.com).  
+- Stock photos sourced from [Pexels](https://pexels.com) and [Unsplash](https://unsplash.com) and [Pinterest](https://pinterest.com).  
 - Icons from [Font Awesome](https://fontawesome.com).  
 - Bootstrap framework by [getbootstrap.com](https://getbootstrap.com).  
 
