@@ -466,6 +466,55 @@ footer a:hover {
   text-decoration: underline !important;
 }
 
+.toast-banner {
+  position: fixed;
+  top: 70px;
+  left: 50%;
+  transform: translate(-50%, -12px);
+  width: calc(100% - 2rem);
+  max-width: 520px;
+  background: linear-gradient(145deg, #f5e6d3 0%, #e8d5b7 100%);
+  color: #3d2817;
+  border-radius: 10px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+  padding: 1rem 1rem 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 2px solid #d4c4a8;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  z-index: 1100;
+}
+
+#booking-confirmation:target {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+
+.toast-body {
+  margin: 0;
+  font-weight: 600;
+}
+
+.toast-close {
+  color: #3d2817;
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.toast-close:hover {
+  background: rgba(0, 0, 0, 0.05);
+  transform: scale(1.05);
+}
+
 /* Modal overlay - hidden by default */
 .modal-overlay {
   position: fixed;

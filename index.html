@@ -55,6 +55,14 @@
         </div>
     </nav>
 
+    <!-- Booking confirmation toast -->
+    <div id="booking-confirmation" class="toast-banner" role="status" aria-live="polite">
+        <div class="toast-body">
+            <strong>Booking received.</strong> We'll get in touch soon.
+        </div>
+        <a class="toast-close" href="#!" aria-label="Dismiss confirmation">&times;</a>
+    </div>
+
     <!-- Hero -->
     <header id="home" class="hero-image">
         <img src="assets/images/books_presentation.jpg" class="d-block w-100"
@@ -414,7 +422,7 @@
                 <a href="#" class="modal-close" aria-label="Close modal">&times;</a>
             </div>
             <!-- ToDo: convert teh form to bootstrap to simplify code -->
-            <form class="modal-form" method="post" action="">
+            <form class="modal-form" method="get" action="#booking-confirmation">
                 <div class="form-group">
                     <label for="kane-firstName">First Name</label>
                     <input type="text" id="kane-firstName" name="firstName" required>
@@ -454,7 +462,7 @@
                 </div>
                 <a href="#" class="modal-close" aria-label="Close modal">&times;</a>
             </div>
-            <form class="modal-form" method="post" action="">
+            <form class="modal-form" method="get" action="#booking-confirmation">
                 <div class="form-group">
                     <label for="notre-firstName">First Name</label>
                     <input type="text" id="notre-firstName" name="firstName" required>
@@ -494,7 +502,7 @@
                 </div>
                 <a href="#" class="modal-close" aria-label="Close modal">&times;</a>
             </div>
-            <form class="modal-form" method="post" action="">
+            <form class="modal-form" method="get" action="#booking-confirmation">
                 <div class="form-group">
                     <label for="miserables-firstName">First Name</label>
                     <input type="text" id="miserables-firstName" name="firstName" required>
@@ -534,7 +542,7 @@
                 </div>
                 <a href="#" class="modal-close" aria-label="Close modal">&times;</a>
             </div>
-            <form class="modal-form" method="post" action="">
+            <form class="modal-form" method="get" action="#booking-confirmation">
                 <div class="form-group">
                     <label for="anna-firstName">First Name</label>
                     <input type="text" id="anna-firstName" name="firstName" required>
@@ -573,7 +581,7 @@
                 </div>
                 <a href="#" class="modal-close" aria-label="Close modal">&times;</a>
             </div>
-            <form class="modal-form" method="post" action="">
+            <form class="modal-form" method="get" action="#booking-confirmation">
                 <div class="form-group">
                     <label for="shogun-firstName">First Name</label>
                     <input type="text" id="shogun-firstName" name="firstName" required>
@@ -613,7 +621,7 @@
                 </div>
                 <a href="#" class="modal-close" aria-label="Close modal">&times;</a>
             </div>
-            <form class="modal-form" method="post" action="">
+            <form class="modal-form" method="get" action="#booking-confirmation">
                 <div class="form-group">
                     <label for="journey-firstName">First Name</label>
                     <input type="text" id="journey-firstName" name="firstName" required>
@@ -651,7 +659,7 @@
                 </div>
                 <a href="#" class="modal-close" aria-label="Close modal">&times;</a>
             </div>
-            <form class="modal-form" method="post" action="">
+            <form class="modal-form" method="get" action="#booking-confirmation">
                 <div class="form-group">
                     <label for="monthly-firstName">First Name</label>
                     <input type="text" id="monthly-firstName" name="firstName" required>
@@ -729,7 +737,8 @@
             <hr class="border-secondary my-4">
 
             <div class="d-flex justify-content-between flex-wrap gap-2">
-                <small>For educational purposes only - made by Irina Ancuta <i class="fa-regular fa-face-smile" aria-hidden="true"></i></small>
+                <small>For educational purposes only - made by Irina Ancuta <i class="fa-regular fa-face-smile"
+                        aria-hidden="true"></i></small>
                 <small><a href="#" class="link-light text-decoration-none">Privacy</a> · <a href="#"
                         class="link-light text-decoration-none">Terms</a></small>
             </div>
