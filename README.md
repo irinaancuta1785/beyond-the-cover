@@ -242,7 +242,7 @@ The site was tested across multiple devices and screen sizes to ensure proper re
 
 **Testing Method:**
 - Used Chrome DevTools Device Mode to simulate different devices
-- Tested on actual physical devices (iPhone 14 Pro, MacBook Pro, iPad)
+- Tested on actual physical devices (iPhone 14 Pro, MacBook Pro, Chrome)
 - Checked at various breakpoints: 320px, 375px, 768px, 1024px, 1440px, 1920px
 - Verified that Bootstrap grid breakpoints work correctly (col-12, col-md-6, col-lg-4)
 
@@ -262,11 +262,8 @@ The site was tested across multiple devices and screen sizes to ensure proper re
 |---------|---------|------------------|---------------|--------------|
 | Google Chrome | 120.x | Windows 10 | ✅ Fully Compatible | None |
 | Google Chrome | 120.x | macOS Sonoma | ✅ Fully Compatible | None |
-| Mozilla Firefox | 121.x | Windows 10 | ✅ Fully Compatible | None |
-| Mozilla Firefox | 121.x | macOS Sonoma | ✅ Fully Compatible | None |
 | Safari | 17.x | macOS Sonoma | ✅ Fully Compatible | None |
-| Safari | 17.x | iOS 17 | ✅ Fully Compatible | None |
-| Microsoft Edge | 120.x | Windows 10 | ✅ Fully Compatible | None |
+| Safari | 17.x | iOS 26 | ✅ Fully Compatible | None |
 
 **Features Tested Across Browsers:**
 - CSS Grid and Flexbox layouts
