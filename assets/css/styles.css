@@ -330,6 +330,7 @@ header[id] {
 /* Testimonials section */
 #testimonials {
   background: linear-gradient(135deg, #2c2416 0%, #3d3427 50%, #2c2416 100%);
+  min-height: 60vh;
 }
 
 #testimonials h2 {
@@ -368,6 +369,29 @@ header[id] {
 
 #testimonials .text-muted {
   color: #5a4a3a !important;
+}
+
+.testimonial-quote {
+  margin: 2rem auto 0;
+  max-width: 48rem;
+  padding: 1.75rem 1.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #8b6f47;
+  border-radius: 0.75rem;
+  color: #f5e6d3;
+}
+
+.testimonial-quote .quote-text {
+  margin: 0 0 0.5rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.3px;
+}
+
+.testimonial-quote .quote-cite {
+  margin: 0;
+  color: #d4c4a8;
+  font-style: italic;
 }
 
 /* FAQ section */
