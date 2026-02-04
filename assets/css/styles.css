@@ -11,6 +11,7 @@ body {
   scroll-padding-top: 3.375rem;
 }
 
+
 /* Add scroll margin to all sections to prevent navbar overlap */
 section[id],
 header[id] {
