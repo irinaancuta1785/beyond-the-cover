@@ -41,6 +41,29 @@ Warm, bookish tones to keep the page cozy and legible.
 - Hero and card images are sourced from free stock sites (Pexels/Unsplash) and include descriptive `alt` text.
 - Six book covers plus a hero background; all stored locally under `assets/images/`.
 
+## 👥 User Stories
+- As a visitor, I want to understand what the book club offers at a glance.
+- As a visitor, I want to see upcoming book discussions with key details.
+- As a visitor, I want to book a session or the monthly pass easily.
+- As a visitor, I want to read testimonials and FAQs for confidence.
+- As a visitor, I want to find contact details and social links quickly.
+
+## 🖼️ User Story Screenshots
+**Story: Understand the club at a glance**  
+![Hero and discussion guide](assets/images/screenshots/user-story-hero.png)
+
+**Story: View upcoming discussions**  
+![Book discussion cards](assets/images/screenshots/user-story-books.png)
+
+**Story: Book a spot / monthly pass**  
+![Booking modal](assets/images/screenshots/user-story-modal.png)
+
+**Story: Read testimonials and FAQs**  
+![Testimonials](assets/images/screenshots/user-story-testimonials.png)
+
+**Story: FAQs and contact / social links**  
+![FAQs and footer contact area](assets/images/screenshots/user-story-faq-and-footer.png)
+
 ## 🧰 Tech Stack
 
 | Technology | Purpose |
