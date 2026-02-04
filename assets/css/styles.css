@@ -65,8 +65,9 @@ header[id] {
   display: inline-block;
   width: 90%;
   padding: 1rem;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 0.5rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .hero-text h1 {
@@ -118,8 +119,9 @@ header[id] {
   width: 90%;
   max-width: 56.25rem;
   padding: 1rem;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 0.5rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .hero-discussion h2 {
